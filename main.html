@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-abc123..." crossorigin="anonymous" />
+
+    
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo3.png" class="logo" alt="" height="100" width="100"></a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="shop.html" >Products</a></li>
+                <li><a href="balance.html">Balance</a></li>
+                <li><a href="#" id="cart-button" class="OpenShopping"><i class='bx bxs-shopping-bag' data-quantity="0"></i></a></li>
+                <li><a href="#" id="User" class="user-icon"><i class='bx bx-user'></i></a>
+                    <ul class="dropdown-menu" id="userDropdown">
+                        <li><a href="#" id="logout-button">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>   
+    </section>
+    <div id="panelContainer">
+    <h2>Product List</h2>
+    <div id="productPanel">
+        <table id="productTable">
+            <tbody id="productTableBody">
+                <!-- Product rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="tutorial-panels">
+            <h2>How to use Electrolley</h2>
+            <img src="img/Barcode.png">
+            <p>1. Scan the items you wanna buy to the barcode scanner</p>
+            <p>2. When the item has display at the table press add to cart button</p>
+            <p>3. Click the shopping bag icon to display cart</p>
+    </div>
+    <div class="tutorial-panels_2">
+        <p>4. Customer can change quantity of item or remove the whole item</p>
+        <p>5. Customer may proceed to payment by click the checkout button</p>
+        <p>6. Choice of payment such as Stripe and NFC card</p>
+        <p>Note: no cash payment supported</p>
+    </div>
+    <div id="cart">
+        <div id="cart-content">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items">
+                <!-- Cart items go here -->
+            </ul>
+            <div class="checkout">
+                <a class="total-button" href="invoice.html">
+                    <span id="totalPrice">0.00</span>
+                </a>
+                <div class="button-container">
+                    <a href="#" class="closeShopping">Close Shopping</a>
+                    <a href="invoice.html" class="Payment">Checkout</a>
+                </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="Script.js"></script>
+    <script src="cart.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>

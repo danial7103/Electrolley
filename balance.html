@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="balance.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo3.png" class="logo" alt="" height="100" width="100"></a>
+    
+        <div>
+          <ul id="navbar">
+              <li><a href="main.html">Home</a></li>
+              <li><a href="shop.html" >Products</a></li>
+              <li><a href="#" class="active">Balance</a></li>
+              <li><a href="#" id="cart-button" class="OpenShopping"><i class='bx bxs-shopping-bag' data-quantity="0"></i></a></li>
+              <li><a href="#" id="User" class="user-icon"><i class='bx bx-user'></i></a>
+                  <ul class="dropdown-menu" id="userDropdown">
+                      <li><a href="#" id="logout-button">Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>   
+    </section>
+
+    <!-- Your other HTML content -->
+
+  <div id="creditDisplay"></div>
+  <div id="topUpButtonContainer">
+    <button id="topUpButton" onclick="openTopUpForm()">Top Up Credit</button>
+</div>
+
+  <!-- Popup form -->
+  <div id="topUpForm">
+  <p>Are you sure you want to top up your credit balance?</p>
+    <form id="confirmationForm">
+      <!-- Additional form fields can be added here if needed -->
+      <button type="button" class="cancel" onclick="cancelTopUp()">Cancel</button>
+      <button type="button" onclick="confirmTopUp()" class="confirm">Confirm</button>
+    </form>
+  </div>
+
+  <!-- Your other HTML content -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="balance.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Choices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Choose Your Payment Method</h1>
+    <div class="payment-panels">
+        <div class="payment-option" id="creditCard">
+            <img src="img/Mastercard.png" alt="Credit Card">
+            <p>Credit/Debit Card</p>
+            <button class="creditCardButton">Credit/Debit payment confirm</button>
+        </div>
+        
+        <div class="payment-option" id="NFCcard">
+            <img src="img/nfc_payment.png" alt="NFC card">
+            <p>Elecard</p>
+            <button id="NFCcardButton">Elecard payment confirm</button>
+        </div>
+    </div>
+
+   <!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<!-- Your payment.js script should come after including Firebase SDK -->
+<script src="payment.js"></script>
+<script src="cart.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>

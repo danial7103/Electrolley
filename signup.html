@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="users" class="signup-form">
+            <div>
+                <p>Register</p>
+            </div>
+            <div class="alert">Your message sent</div>
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="FULL NAME" />
+            </div>
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="EMAIL" />
+            </div>
+            <div class="inputBox">
+                <input type="password" id="passwordid" placeholder="PASSWORD" />
+            </div>
+            <div class="inputBox">
+                <input type="tel" id="telephoneid" placeholder="TELEPHONE" />
+            </div>
+            <div class="inputBox">
+                <input type="number" id="cardnumberid" placeholder="ELECARD NUMBER" />
+            </div>
+            <div class="inputBox">
+                <button type="submit">Sign Up</button>
+            </div>
+            <div class="small-section">
+                <p>Already have an account ?</p>
+                <span><a href="index.html">Sign In</a></span>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

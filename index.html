@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="users" class="login-form">
+
+            <div>
+                <p>LogIn</p>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="EMAIL" />
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="passwordid" cols="30" rows="10" placeholder="PASSWORD" />
+            </div>
+
+            <div id="error-message" class="error-message"></div>
+
+            <div class="inputBox">
+                <button type="submit">Log In</button>
+            </div>
+
+            <div class="small-section">
+                <p>Do not have an account ?</p>
+                <span><a href="signup.html">Sign Up</a></span>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="signin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Electrolley</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo3.png" class="logo" alt="" height="100" width="100"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#" class="active">Products</a></li>
+                <li><a href="balance.html">Balance</a></li>
+                <li><a href="#" id="cart-button" class="OpenShopping"><i class='bx bxs-shopping-bag' data-quantity="0"></i></a></li>
+                <li><a href="#" id="User" class="user-icon"><i class='bx bx-user'></i></a>
+                    <ul class="dropdown-menu" id="userDropdown">
+                        <li><a href="#" id="logout-button">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>        
+
+    </section>
+
+    <section id="page-header">
+        <h2>#ShopWithUs</h2>
+        <p>Spend more than RM300 and win a chance to win a BMW 550i</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container" id="productContainer">
+          <!-- Products will be dynamically added here -->
+        </div>
+      </section>
+      
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
